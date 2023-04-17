@@ -14,6 +14,7 @@ Repository for the final project of CSC413.
 - [Justification of Results](#justification-of-results)
 - [Ethical Consideration](#ethical-consideration)
 - [Authors](#authors)
+- [License](#license)
   
 # Introduction 
 
@@ -374,3 +375,9 @@ Work Split:
 All members collaborated in training the model equally and the best or most promising model was chosen. Once we had a trained model, all members joined a Discord call to write up the final README file.
 
 We used [HackMD.io](https://hackmd.io/) for real-time collaboration on the README file.
+
+# License
+
+We are using the MIT license for this project
+
+[LICENSE.md](LICENSE.md)
