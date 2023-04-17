@@ -46,7 +46,7 @@ This is then passed into encoder (input dimension of 512) which uses the multi-h
 
 We then have a stack of 4 decoder sub-layers with input dimension of 512 that are identical to the encoder layers, except they also include a third sub-layer which performs multi-head attention with 8 heads over the output of the encoder stack which is then fed into a feedforward network with output dimension of 1024. Similar to the encoder layers, there are skip residual connections. When attending to the expected outputs, a masking matrix is used to prevent the decoder from attending to tokens that are at a future timestep (which would be cheating). The output of this decoder stack is then finally passed into a feedforward network with output dimension of 30,000 - which is the size of our vocabulary and softmaxed to get the final prediction probabilities.
 
-A detailed computation graph image (generated using [torchviz](https://github.com/szagoruyko/pytorchviz)) of a single pass of our model can be found at this [link](https://raw.githubusercontent.com/sharvenp/csc413-Final-Project/main/README_FILES/transformer_torchviz.png?token=GHSAT0AAAAAABRXQBYKWLKA3MSP7WSZCAFGZB5TKZA).
+A detailed computation graph image (generated using [torchviz](https://github.com/szagoruyko/pytorchviz)) of a single forward pass of our model can be found at this [link](https://raw.githubusercontent.com/sharvenp/csc413-Final-Project/main/README_FILES/transformer_torchviz.png?token=GHSAT0AAAAAABRXQBYKWLKA3MSP7WSZCAFGZB5TKZA).
 
 ### Model Parameters
 
